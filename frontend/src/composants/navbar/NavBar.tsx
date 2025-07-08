@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import { IoClose } from "react-icons/io5";
 import { TbMenu2 } from "react-icons/tb";
-
+import logo from "../../assets/logo.svg"
 const NavBar = () => {
   const [isActive, setActive] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -33,7 +33,7 @@ const NavBar = () => {
   return (
     <>
       <div
-        className={`fixed top-0 left-0 w-full h-20 px-4 md:px-14 flex items-center z-50 transition-all duration-500 ease-in-out ${
+        className={`fixed top-0 left-0 w-full h-16 px-4  md:px-14 lg:px-35 flex items-center z-50 transition-all duration-500 ease-in-out ${
           isActive
             ? "bg-white shadow-md text-black backdrop-blur-sm"
             : "bg-transparent text-white"
@@ -42,10 +42,14 @@ const NavBar = () => {
       >
         <div className="flex items-center w-full">
           <nav className="flex items-center justify-between w-full">
-            <div>
-              <h1 className="text-2xl md:text-3xl">Expertise</h1>
+            <div className="w-24 h-8 md:w-24 md:h-8 lg:w-48 lg:h-16 ">
+              <img
+                src={logo}
+                alt="logo"
+                className="w-full object-cover" />
+              {/* <h1 className="text-xl md:text-2xl font-bold">Expertise</h1> */}
             </div>
-            <ul className="hidden items-center gap-6  cursor-pointer md:hidden lg:flex">
+            <ul className="hidden items-center gap-6 text-sm  cursor-pointer md:hidden lg:flex">
               <li>Home</li>
               <li>Qui sommes-nous?</li>
               <li>Store</li>
@@ -66,8 +70,8 @@ const NavBar = () => {
                 <TbMenu2 size={24} onClick={toggleMobileMenu} />
               )}
               {/* <div className="relative w-full"> */}
-              {isMobileMenuOpen && (
-                <ul className="fixed top-20 left-0  bg-white w-full min-h-full text-black flex flex-col gap-4 p-4 z-[999]">
+              {/* {isMobileMenuOpen && (
+                <ul className="fixed top-20 left-0  bg-white w-full min-h-full text-sm text-black flex flex-col gap-4 p-4 z-[999]">
                   <li className="cursor-pointer">Home</li>
                   <li className="cursor-pointer">Qui sommes-nous?</li>
                   <li className="cursor-pointer">Store</li>
@@ -75,7 +79,7 @@ const NavBar = () => {
                   <li className="cursor-pointer">Blog</li>
                   <li className="cursor-pointer">Contact</li>
                 </ul>
-              )}
+              )} */}
               {/* </div> */}
             </div>
           </nav>
