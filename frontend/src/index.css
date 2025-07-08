@@ -1,14 +1,23 @@
 @import "tailwindcss";
 
-:root{
-  --bg-color:#F3F4F6;
-}
 body {
   /* font-family: "Poppins", sans-serif; */
-   font-family: "Sora", sans-serif;
+  font-family: "Sora", sans-serif;
   font-size: 1rem;
-  background-color: #F3F4F6;
+  background-color: #f3f4f6;
 }
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: "Inknut Antiqua", serif;
+}
+
+@theme {
+  --bg-color: #f3f4f6;
+  --color-title: #136682;
+  --font-sora:"Sora", sans-serif;
+  --bg-background_gradient:#151b2b
 }

@@ -1,8 +1,9 @@
-import React from "react";
+
 // import NavBar from "../composants/navbar/NavBar";
 import Header from "../composants/header/Header";
 import About from "../composants/about/About";
 import Services from "../composants/services/services";
+import Info from "../composants/info/info";
 
 const Home = () => {
   return (
@@ -10,6 +11,7 @@ const Home = () => {
       <Header />
       <About />
       <Services/>
+      <Info/>
       {/* <NavBar /> */}
       {/* <Hero /> */}
       {/* Add more components as needed */}
