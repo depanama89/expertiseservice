@@ -3,7 +3,7 @@ import { GoArrowUpRight } from "react-icons/go";
 const Hero = () => {
   return (
     <div className="w-full h-[400px]   ">
-      <div className="flex flex-col gap-8 md:gap-12 lg:gap-17 md:px-16 lg:px-35 max-lg:items-center">
+      <div className="flex flex-col gap-8 md:gap-12 px-4 lg:gap-17 md:px-16 lg:px-35 max-lg:items-center">
         <h1 className="text-white text-lg md:text-2xl lg:max-w-2xl lg:text-3xl md:leading-12 font-bold leading-8  mt-24  md:mt-32 ">
           Expertise Services, votre partenaire Informatique
         </h1>
@@ -19,7 +19,7 @@ const Hero = () => {
         </p>
         <div>
           
-          <button className="px-6 py-4 w-content rounded-full border border-white flex items-center gap-4 text-white cursor-pointer">
+          <button className="px-6 py-4 w-content rounded-full border border-white flex  gap-4 text-white cursor-pointer">
             Explorer <GoArrowUpRight className="text-white cursor-pointer" />
           </button>
         </div>

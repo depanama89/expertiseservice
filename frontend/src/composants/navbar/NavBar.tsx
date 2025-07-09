@@ -33,7 +33,7 @@ const NavBar = () => {
   return (
     <>
       <div
-        className={`fixed top-0 left-0 w-full h-16 px-4  md:px-14 lg:px-35 flex items-center z-50 transition-all duration-500 ease-in-out ${
+        className={`fixed top-0 left-0 w-full h-17 px-4  md:px-14 lg:px-35 flex items-center z-50 transition-all duration-500 ease-in-out ${
           isActive
             ? "bg-white shadow-md text-black backdrop-blur-sm"
             : "bg-transparent text-white"
@@ -86,7 +86,7 @@ const NavBar = () => {
         </div>
       </div>
       {isMobileMenuOpen && (
-        <ul className="fixed top-20 left-0  bg-white w-full min-h-full text-black flex flex-col gap-4 p-4 z-[999]">
+        <ul className="fixed top-16 left-0  bg-white w-full min-h-full text-black flex flex-col gap-4 p-4 z-[999]">
           <li className="cursor-pointer">Home</li>
           <li className="cursor-pointer">Qui sommes-nous?</li>
           <li className="cursor-pointer">Store</li>

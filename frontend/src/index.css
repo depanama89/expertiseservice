@@ -16,8 +16,9 @@ h6 {
 }
 
 @theme {
-  --bg-color: #f3f4f6;
+  --color-brands: #f3f4f6;
   --color-title: #136682;
   --font-sora:"Sora", sans-serif;
   --bg-background_gradient:#151b2b
+
 }
