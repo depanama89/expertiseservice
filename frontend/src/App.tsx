@@ -1,14 +1,20 @@
-// import { Routes } from "react-router";
+import { Route, Routes } from "react-router";
 
 import Home from "./pages/Home";
+import Contact from "./pages/Contact";
+import NavBar from "./composants/navbar/NavBar";
 
 function App() {
   return (
-    <main>
-      <div className="min-h-screen w-full ">
-        <Home />
-      </div>
-    </main>
+    <div className="min-h-screen w-full ">
+      <NavBar />
+      <main>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
+      </main>
+    </div>
   );
 }
 
