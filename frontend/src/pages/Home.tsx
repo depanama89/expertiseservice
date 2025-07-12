@@ -5,6 +5,7 @@ import About from "../composants/about/About";
 import Services from "../composants/services/services";
 import Info from "../composants/info/info";
 import Brands from "../composants/brands/Brands";
+import Devis from "../composants/devis/Devis";
 
 const Home = () => {
   return (
@@ -14,6 +15,7 @@ const Home = () => {
       <Services/>
       <Info/>
       <Brands/>
+      <Devis/>
       {/* <NavBar /> */}
       {/* <Hero /> */}
       {/* Add more components as needed */}
